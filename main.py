@@ -58,7 +58,7 @@ if analyze and uploaded_file:
 
         # Call the Anthropic API to analyze the resume (directly invoking the LLM)
         response = client.messages.create(
-            model="claude-3-5-sonnet-20241022",
+            model="claude-3-haiku-20240307",
             max_tokens=1000, # Required for Anthropic messages API
             system="You are an expert resume reviewer with years of experience in HR and recruitment.",
             messages=[
